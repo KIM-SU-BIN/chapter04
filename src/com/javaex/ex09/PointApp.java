@@ -18,10 +18,12 @@ public class PointApp {
 		pMap.put("이효리", p02);
 		pMap.put("박명수", p03);
 		
-		System.out.println(pMap.size());
-		System.out.println(pMap.toString());
+		System.out.println(pMap);						//pMap 전체 출력
+		System.out.println(pMap.size());				//개수 출력 : 3
+		System.out.println(pMap.toString());			//전체 출력과 동일
 		
-		System.out.println(pMap.get("박명수").getX());
+		//박명수의 x값 출력-> 이전에는 (몇 번째)번호로 출력했지만 여기선 이름을 써야함
+		System.out.println(pMap.get("박명수").getX());	
 		
 		//같은 키값으로 추가
 		Point p04 = new Point(100,200);
