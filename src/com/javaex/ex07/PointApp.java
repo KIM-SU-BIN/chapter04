@@ -24,10 +24,16 @@ Set<Point> pSet = new HashSet<Point>();
 		*/
 		System.out.println(pSet.size());
 		System.out.println(pSet.toString());
+		// System.out.println(pSet); toString으로 출력하는 결과값과 동일함
 		System.out.println("------------------------");
 		
-		Point p04 = new Point(3, 6);   //p02 중복
+		Point p04 = new Point(3, 6);   //p02 중복이기 때문에 결과값에 출력되지 않음
 		pSet.add(p04);
+		System.out.println(pSet.toString());
+		System.out.println("------------------------");
+		
+		Point p05 = new Point(4, 6);  
+		pSet.add(p05);
 		System.out.println(pSet.toString());
 		
 		//hashCode()
